@@ -1,3 +1,5 @@
+Hãy điền các dòng code đã cho và dấu 3 chấm (...) để đoạn code hoạt động được  😢😢😢
+
 Đề 1: 
     eventClick(); 
     showAnimation(); 
