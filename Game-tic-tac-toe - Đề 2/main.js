@@ -133,9 +133,9 @@ document.getElementById("reset").addEventListener("click", function () {
 function loadingTheGame() {
 
     const firstComponent = eventClick(); 
-    const secondComponent = handelShowOnDisplay(); 
-    const thirdComponent = showAnimation(); // 
-    const fourthComponent = checkResult();
+    const secondComponent = ...; 
+    const thirdComponent = ...; // 
+    const fourthComponent = ...;
     const fifthComponent = findWinner();
 
 

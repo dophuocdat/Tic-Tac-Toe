@@ -132,10 +132,10 @@ document.getElementById("reset").addEventListener("click", function () {
 
 function loadingTheGame() {
 
-    const firstComponent = eventClick(); 
-    const secondComponent = handelShowOnDisplay(); 
+    const firstComponent = ...; 
+    const secondComponent = ...; 
     const thirdComponent = showAnimation(); // 
-    const fourthComponent = checkResult();
+    const fourthComponent = ...;
     const fifthComponent = findWinner();
 
 

@@ -134,9 +134,9 @@ function loadingTheGame() {
 
     const firstComponent = eventClick(); 
     const secondComponent = handelShowOnDisplay(); 
-    const thirdComponent = showAnimation(); // 
-    const fourthComponent = checkResult();
-    const fifthComponent = findWinner();
+    const thirdComponent = ...; // 
+    const fourthComponent = ...;
+    const fifthComponent = ...;
 
 
 

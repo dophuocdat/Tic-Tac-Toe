@@ -1,0 +1,24 @@
+Đề 1: 
+    eventClick(); 
+    showAnimation(); 
+    findWinner();
+
+Đề 2: 
+    handelShowOnDisplay(); 
+    showAnimation(); 
+    checkResult();
+
+Đề 3: 
+    eventClick(); 
+    checkResult();
+    findWinner();
+
+Đề 4: 
+    eventClick(); 
+    handelShowOnDisplay(); 
+    checkResult();
+
+Đề 5: 
+    showAnimation(); 
+    checkResult();
+    findWinner();
