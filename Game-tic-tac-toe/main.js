@@ -21,10 +21,17 @@ const handelShowOnDisplay = () => {
     return 2;
 }
 
-const checkResult = () => {
+const showAnimation = () => {
     return 3;
 }
 
+const checkResult = () => {
+    return 4;
+}
+
+const findWinner = () => {
+    return 5;
+}
 
 function checkWin() {
     let counter = 0;
@@ -77,6 +84,19 @@ for (let i = 1; i <= 9; i++) {
     document.getElementById(i.toString()).addEventListener(
         "click",
         function () {
+
+            if (!loadingTheGame()) {
+                console.log("Sai rồi");
+                Swal.fire({
+                    iconHtml: '<img src= "draw.gif" style="width:150px; height:150px">',
+                    title: 'Rất tiếc, bạn sắp xếp câu lệnh sai!',
+                    showConfirmButton: false,
+                    timer: 4000
+                })
+                // Hiện thông báo chi đó thể thể hiện nó đã sai nhá
+                return;
+            }
+
             if (this.innerHTML === "" && !gameEnded) {
                 console.log(`Trước khi click ${playerSymbol}`);
                 // Đổi biển tượng này thành biểu tượng khác cho lượt tiếp theo
@@ -98,16 +118,7 @@ for (let i = 1; i <= 9; i++) {
 
 // nút reset
 document.getElementById("reset").addEventListener("click", function () {
-    if (!loadingTheGame()) {
-        Swal.fire({
-            iconHtml: '<img src= "draw.gif" style="width:150px; height:150px">',
-            title: 'Rất tiếc, bạn sắp xếp câu lệnh sai!',
-            showConfirmButton: false,
-            timer: 4000
-        })
-        // Hiện thông báo chi đó thể thể hiện nó đã sai nhá
-        return;
-    }
+    
     for (let i = 1; i <= 9; i++) {
         document.getElementById(i.toString()).innerHTML = "";
         document.getElementById(i.toString()).classList.remove("check-o");
@@ -123,8 +134,21 @@ function loadingTheGame() {
 
     const firstComponent = eventClick(); // Đoạn này sẽ xoá cái phần gọi hàm đi rồi cho nó điền
     const secondComponent = handelShowOnDisplay(); // Để lại const với tên biến thôi
-    const thirdComponent = checkResult();
+    const thirdComponent = showAnimation(); // 
+    const fourthComponent = checkResult();
+    const fifthComponent = findWinner();
 
-    return firstComponent + secondComponent == thirdComponent;
+    // Mẫu 1 cái đề bài như này tương tự tạo ra tầm 5 đề là được
+    // const firstComponent = ...; 
+    // const secondComponent = handelShowOnDisplay(); 
+    // const thirdComponent = ...; 
+    // const fourthComponent = checkResult();
+    // const fifthComponent =. ..;
+
+
+    return (
+        (fifthComponent === fourthComponent + firstComponent) 
+        || (fifthComponent === secondComponent + thirdComponent)
+    )
 
 }
