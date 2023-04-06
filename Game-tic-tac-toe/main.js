@@ -86,7 +86,7 @@ for (let i = 1; i <= 9; i++) {
         function () {
 
             if (!loadingTheGame()) {
-                console.log("Sai rồi");
+                console.error("Sai rồi");
                 Swal.fire({
                     iconHtml: '<img src= "draw.gif" style="width:150px; height:150px">',
                     title: 'Rất tiếc, bạn sắp xếp câu lệnh sai!',
