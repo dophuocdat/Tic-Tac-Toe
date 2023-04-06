@@ -142,7 +142,7 @@ function loadingTheGame() {
 
     return (
         (fifthComponent === fourthComponent + firstComponent) 
-        || (fifthComponent === secondComponent + thirdComponent)
+        && (fifthComponent === secondComponent + thirdComponent)
     )
 
 }
