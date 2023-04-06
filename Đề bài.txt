@@ -13,9 +13,11 @@ function loadingTheGame() {
     const fourthComponent = checkResult();
     const fifthComponent = .....;
     
+   
     return (
-        (fifthComponent === fourthComponent + firstComponent)
-        || (fifthComponent === secondComponent + thirdComponent)
+        (thirdComponent === firstComponent + secondComponent)
+        && (fourthComponent === firstComponent + thirdComponent)
+        && (fifthComponent === secondComponent + thirdComponent)
     )
 
 }
