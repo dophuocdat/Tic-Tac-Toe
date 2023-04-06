@@ -129,20 +129,19 @@ document.getElementById("reset").addEventListener("click", function () {
     gameEnded = false;
 });
 
-
 function loadingTheGame() {
-
-    const firstComponent = ...; 
-    const secondComponent = handelShowOnDisplay(); 
-    const thirdComponent = ...; // 
+    // Sắp Xếp Câu lệnh ở đây nhá !!!!
+    const firstComponent = .....;
+    const secondComponent = handelShowOnDisplay();
+    const thirdComponent = .......; // 
     const fourthComponent = checkResult();
-    const fifthComponent = ...;
-
-
+    const fifthComponent = .....;
+    
 
     return (
-        (fifthComponent === fourthComponent + firstComponent) 
-        || (fifthComponent === secondComponent + thirdComponent)
+        (thirdComponent === firstComponent + secondComponent)
+        && (fourthComponent === firstComponent + thirdComponent)
+        && (fifthComponent === secondComponent + thirdComponent)
     )
 
 }

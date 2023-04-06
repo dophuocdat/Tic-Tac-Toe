@@ -12,26 +12,7 @@ let winPos = [
     [3, 5, 7]
 ];
 
-// Tên các hàm này có thể đổi lại cho nó hợp lý hơn tý
-const eventClick = () => {
-    return 1;
-}
 
-const handelShowOnDisplay = () => {
-    return 2;
-}
-
-const showAnimation = () => {
-    return 3;
-}
-
-const checkResult = () => {
-    return 4;
-}
-
-const findWinner = () => {
-    return 5;
-}
 
 function checkWin() {
     let counter = 0;
@@ -118,7 +99,7 @@ for (let i = 1; i <= 9; i++) {
 
 // nút reset
 document.getElementById("reset").addEventListener("click", function () {
-    
+
     for (let i = 1; i <= 9; i++) {
         document.getElementById(i.toString()).innerHTML = "";
         document.getElementById(i.toString()).classList.remove("check-o");
@@ -129,20 +110,42 @@ document.getElementById("reset").addEventListener("click", function () {
     gameEnded = false;
 });
 
+// Tên các hàm này có thể đổi lại cho nó hợp lý hơn tý
+const eventClick = () => {
+    return 1;
+}
+
+const handelShowOnDisplay = () => {
+    return 2;
+}
+
+const showAnimation = () => {
+    return 3;
+}
+
+const checkResult = () => {
+    return 4;
+}
+
+const findWinner = () => {
+    return 5;
+}
 
 function loadingTheGame() {
-
-    const firstComponent = eventClick(); 
-    const secondComponent = handelShowOnDisplay(); 
-    const thirdComponent = showAnimation(); // 
-    const fourthComponent = checkResult();
-    const fifthComponent = findWinner();
-
+    const firstComponent = eventClick(); //1
+    const secondComponent = handelShowOnDisplay(); //2
+    const thirdComponent = showAnimation(); // 3
+    const fourthComponent = checkResult(); //4
+    const fifthComponent = findWinner();//5
 
 
     return (
-        (fifthComponent === fourthComponent + firstComponent) 
-        || (fifthComponent === secondComponent + thirdComponent)
+        (thirdComponent === firstComponent + secondComponent)
+        && (fourthComponent === firstComponent + thirdComponent)
+        && (fifthComponent === secondComponent + thirdComponent)
     )
 
 }
+
+
+

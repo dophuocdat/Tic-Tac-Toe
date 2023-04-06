@@ -1,26 +1,120 @@
-Hãy điền các dòng code đã cho và dấu 3 chấm (...) để đoạn code hoạt động được  😢😢😢
+Hãy điền các dòng code đã cho và dấu 3 chấm (...) để đoạn code hoạt động được
 
 Đề 1: 
+    findWinner();
     eventClick(); 
     showAnimation(); 
-    findWinner();
+
+function loadingTheGame() {
+    // Sắp Xếp Câu lệnh ở đây nhá !!!!
+    const firstComponent = .....;
+    const secondComponent = handelShowOnDisplay();
+    const thirdComponent = .......; // 
+    const fourthComponent = checkResult();
+    const fifthComponent = .....;
+    
+    return (
+        (fifthComponent === fourthComponent + firstComponent)
+        || (fifthComponent === secondComponent + thirdComponent)
+    )
+
+}
 
 Đề 2: 
-    handelShowOnDisplay(); 
     showAnimation(); 
+    handelShowOnDisplay(); 
     checkResult();
+
+    function loadingTheGame() {
+    // Sắp Xếp Câu lệnh ở đây nhá !!!!
+
+    const firstComponent = eventClick();
+    const secondComponent = .....;
+    const thirdComponent = ......; // 
+    const fourthComponent = .......;
+    const fifthComponent = findWinner();
+
+    return (
+        (fifthComponent === fourthComponent + firstComponent)
+        || (fifthComponent === secondComponent + thirdComponent)
+    )
+
+}
 
 Đề 3: 
+  checkResult();
     eventClick(); 
-    checkResult();
     findWinner();
+
+    function loadingTheGame() {
+    // Sắp Xếp Câu lệnh ở đây nhá !!!!
+
+    const firstComponent = ......;
+    const secondComponent = handelShowOnDisplay();
+    const thirdComponent = showAnimation(); // 
+    const fourthComponent = ......;
+    const fifthComponent = .......;
+
+    return (
+        (fifthComponent === fourthComponent + firstComponent)
+        || (fifthComponent === secondComponent + thirdComponent)
+    )
+
+}
 
 Đề 4: 
-    eventClick(); 
-    handelShowOnDisplay(); 
+ handelShowOnDisplay(); 
+    eventClick();
     checkResult();
 
+    function loadingTheGame() {
+    // Sắp Xếp Câu lệnh ở đây nhá !!!!
+    const firstComponent = ......;
+    const secondComponent = ......;
+    const thirdComponent = showAnimation(); // 
+    const fourthComponent = ......;
+    const fifthComponent = findWinner();
+
+    return (
+        (fifthComponent === fourthComponent + firstComponent)
+        || (fifthComponent === secondComponent + thirdComponent)
+    )
+
+}
+
 Đề 5: 
+  findWinner();
     showAnimation(); 
     checkResult();
-    findWinner();
+  
+  function loadingTheGame() {
+    // Sắp Xếp Câu lệnh ở đây nhá !!!!
+    const firstComponent = eventClick();
+    const secondComponent = handelShowOnDisplay();
+    const thirdComponent = .....; // 
+    const fourthComponent = ......;
+    const fifthComponent = ......;
+
+    return (
+        (fifthComponent === fourthComponent + firstComponent)
+        || (fifthComponent === secondComponent + thirdComponent)
+    )
+
+}
+
+
+Đáp Án
+function loadingTheGame() {
+    const firstComponent = eventClick();
+    const secondComponent = handelShowOnDisplay();
+    const thirdComponent = showAnimation(); // 
+    const fourthComponent = checkResult();
+    const fifthComponent = findWinner();
+
+    return (
+        (fifthComponent === fourthComponent + firstComponent)
+        || (fifthComponent === secondComponent + thirdComponent)
+    )
+
+}
+

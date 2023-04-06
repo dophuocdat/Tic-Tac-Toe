@@ -131,18 +131,18 @@ document.getElementById("reset").addEventListener("click", function () {
 
 
 function loadingTheGame() {
+    // Sắp Xếp Câu lệnh ở đây nhá !!!!
 
-    const firstComponent = ...; 
-    const secondComponent = handelShowOnDisplay(); 
+    const firstComponent = ......;
+    const secondComponent = handelShowOnDisplay();
     const thirdComponent = showAnimation(); // 
-    const fourthComponent = ...;
-    const fifthComponent = ...;
+    const fourthComponent = ......;
+    const fifthComponent = .......;
 
-
-
+  
     return (
-        (fifthComponent === fourthComponent + firstComponent) 
-        || (fifthComponent === secondComponent + thirdComponent)
+        (thirdComponent === firstComponent + secondComponent)
+        && (fourthComponent === firstComponent + thirdComponent)
+        && (fifthComponent === secondComponent + thirdComponent)
     )
-
 }

@@ -130,19 +130,20 @@ document.getElementById("reset").addEventListener("click", function () {
 });
 
 
-function loadingTheGame() {
 
-    const firstComponent = ...; 
-    const secondComponent = ...; 
+function loadingTheGame() {
+    // Sắp Xếp Câu lệnh ở đây nhá !!!!
+    const firstComponent = ......;
+    const secondComponent = ......;
     const thirdComponent = showAnimation(); // 
-    const fourthComponent = ...;
+    const fourthComponent = ......;
     const fifthComponent = findWinner();
 
-
-
+  
     return (
-        (fifthComponent === fourthComponent + firstComponent) 
-        || (fifthComponent === secondComponent + thirdComponent)
+        (thirdComponent === firstComponent + secondComponent)
+        && (fourthComponent === firstComponent + thirdComponent)
+        && (fifthComponent === secondComponent + thirdComponent)
     )
 
 }
